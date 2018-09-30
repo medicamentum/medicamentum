@@ -1,6 +1,6 @@
 # Medicine Leaflets
 
-The objective of this project is to collect, organize and mine information from medicine leaflets regulated by health regulatory agencies around the world . This is an open science project. This means everybody is welcome (and encouraged) to contribute however they can, using whichever skills they have. Your contributions to the project will be recorded as comments in the issue tracker and pull requests to our repo. We will use those to automatically build a list of participants to give credit to everyone that helped.
+The objective of this project is to collect, organize and mine information from medicine leaflets distributed by health regulatory agencies around the world . This is an open science project. This means everybody is welcome (and encouraged) to contribute however they can, using whichever skills they have. Your contributions to the project will be recorded as comments in the issue tracker and pull requests to our repo. We will use those to automatically build a list of participants to give credit to everyone that helped.
 
 ## How to participate?
 
