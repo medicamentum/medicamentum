@@ -1,0 +1,7 @@
+FROM alpine:3.8
+RUN apk add --no-cache curl
+
+RUN mkdir -p /opt/agency/brazil && \
+    mkdir -p /mnt/output
+
+ADD agency/brazil/anvisa.sh /opt/agency/brazil/anvisa.sh
