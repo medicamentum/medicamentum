@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import scrapy
 import codecs
 import sys
