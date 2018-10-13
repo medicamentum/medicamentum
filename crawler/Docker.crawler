@@ -1,7 +1,15 @@
-FROM alpine:3.8
-RUN apk add --no-cache curl
+FROM debian:9
+RUN apt-get update && \
+    apt-get install -y curl && \
+    apt-get install -y apache2 apache2-utils  && \
+    apt-get install -y python \
+                       python-dev \ 
+                       python-pip && \
+    pip install scrapy && \
+    mkdir -p /opt/agency/brazil && \
+    mkdir -p /mnt/output 
 
-RUN mkdir -p /opt/agency/brazil && \
-    mkdir -p /mnt/output
+ADD agency/brazil/anvisa.sh /opt/agency/brazil/anvisa.sh 
+ADD agency/brazil/anvisa.py /opt/agency/brazil/anvisa.py 
 
-ADD agency/brazil/anvisa.sh /opt/agency/brazil/anvisa.sh
+EXPOSE 80 443

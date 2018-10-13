@@ -2,7 +2,6 @@
 
 Just follow the commands bellow:
 
-
 - Docker image creation:
 
 ` docker build -f Docker.crawler -t crawler .`
