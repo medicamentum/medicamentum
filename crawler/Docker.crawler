@@ -5,7 +5,6 @@ RUN apt-get update && \
     apt-get install -y python \
                        python-dev \ 
                        python-pip && \
-    apt-get install poppler-utils && \
     pip install scrapy && \
     mkdir -p /opt/agency/brazil && \
     mkdir -p /mnt/output 
