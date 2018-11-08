@@ -6,14 +6,14 @@ import io
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="drugs",
-  passwd="Drug$Drug$2020",
+  host=sys.argv[1],
+  user=sys.argv[2],
+  passwd=sys.argv[3],
   database="DRUGS",
   use_unicode=True
 )
 
-path = sys.argv[1] + "/*.txt"
+path = sys.argv[4] + "/*.txt"
 
 mycursor = mydb.cursor()
 
