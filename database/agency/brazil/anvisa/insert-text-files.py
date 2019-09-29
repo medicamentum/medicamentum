@@ -7,12 +7,12 @@ import mysql.connector
 import unicodedata
 
 mydb = mysql.connector.connect(
-  host=sys.argv[1],
-  user=sys.argv[2],
-  passwd=sys.argv[3],
-  database="DRUGS",
-  use_unicode=True,
-  charset='utf8'
+    host=sys.argv[1],
+    user=sys.argv[2],
+    passwd=sys.argv[3],
+    database="DRUGS",
+    use_unicode=True,
+    charset='utf8mb4'
 )
 
 path = sys.argv[4] + "/*.txt"
@@ -20,7 +20,6 @@ path = sys.argv[4] + "/*.txt"
 mycursor = mydb.cursor()
 
 for file in glob.glob(path):
-
     content = io.open(file, mode="r", encoding="utf-8").read()
     content = content.strip()
     content = unicodedata.normalize("NFKC", content)
