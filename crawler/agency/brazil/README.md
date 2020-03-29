@@ -17,3 +17,9 @@ Just follow the commands bellow:
 Then, run `service apache2 start` and
 
 `mkdir -p /mnt/output/pdfs && cd /mnt/output/pdfs && scrapy runspider /opt/agency/brazil/anvisa.py -a last_page=1013`
+
+
+# Distribution and copyrights 
+
+![ANVISA](https://raw.githubusercontent.com/sandroacoelho/drugs/master/crawler/agency/brazil/ANVISA_AUTORIZACAO.png)
+
