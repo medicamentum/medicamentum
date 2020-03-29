@@ -6,6 +6,7 @@ RUN apt-get update && \
                        python-dev \ 
                        python-pip && \
     pip install scrapy && \
+    pip install --upgrade pyasn1-modules && \
     mkdir -p /opt/agency/brazil && \
     mkdir -p /mnt/output 
 
